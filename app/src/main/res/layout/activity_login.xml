@@ -3,10 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="top.ewind.raband.ui.LoginActivity">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/primary"
+    android:id="@+id/frameLayout"></FrameLayout>
+
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:id="@+id/headImg"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:src="#ce218c"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
