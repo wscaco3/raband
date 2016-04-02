@@ -3,6 +3,7 @@ package top.ewind.raband.ui;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.github.paolorotolo.appintro.AppIntro;
 import com.github.paolorotolo.appintro.AppIntroFragment;
@@ -32,7 +33,7 @@ public class GuideActivity extends AppIntro {
     @Override
     public void onDonePressed() {
         Intent intent = new Intent();
-        intent.setClass(GuideActivity.this, MainActivity.class);
+        intent.setClass(GuideActivity.this, LoginActivity.class);
         startActivity(intent);
         GuideActivity.this.finish();
     }
