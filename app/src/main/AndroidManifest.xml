@@ -33,7 +33,6 @@
         <activity
             android:name=".ui.GuideActivity"
             android:theme="@style/AppThemeFull" />
-        <activity android:name=".ui.LoginActivity"></activity>
     </application>
 
 </manifest>
