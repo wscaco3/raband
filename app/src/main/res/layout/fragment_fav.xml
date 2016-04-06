@@ -2,20 +2,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ab5511"
-    tools:context="top.ewind.raband.ui.fragment.MainFragment">
+    android:background="#ff00ee"
+    tools:context="top.ewind.raband.ui.fragment.FavFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="点我啊"
         android:id="@+id/button"
-        android:layout_gravity="left|center_vertical" />
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored" />
 
 </FrameLayout>

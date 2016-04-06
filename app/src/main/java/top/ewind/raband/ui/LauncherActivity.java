@@ -18,7 +18,7 @@ import top.ewind.raband.pojo.Setting;
 @ContentView(R.layout.activity_launcher)
 public class LauncherActivity extends BaseActivity {
 
-    boolean needGuide = true;
+    boolean needGuide = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

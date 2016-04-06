@@ -14,6 +14,7 @@ import android.view.MenuItem;
 
 import top.ewind.raband.R;
 import top.ewind.raband.base.BaseActivity;
+import top.ewind.raband.ui.fragment.FavFragment;
 import top.ewind.raband.ui.fragment.MainFragment;
 
 import org.xutils.view.annotation.ContentView;
@@ -39,11 +40,7 @@ public class MainActivity extends BaseActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navView.setNavigationItemSelectedListener(this);
-
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction transaction = fm.beginTransaction();
-        transaction.replace(R.id.main_content, MainFragment.newInstance("ok"));
-        transaction.commit();
+        setFragment(0);
     }
 
     @Override
@@ -53,6 +50,20 @@ public class MainActivity extends BaseActivity
         } else {
             super.onBackPressed();
         }
+    }
+
+    private void setFragment(int seq){
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction transaction = fm.beginTransaction();
+        transaction.setCustomAnimations(R.anim.alpha_enter,R.anim.alpha_exit);
+        if(seq == 0){
+            transaction.replace(R.id.main_content, MainFragment.newInstance("ok"));
+        }
+        else if (seq==1){
+            transaction.replace(R.id.main_content, FavFragment.newInstance("ok"));
+        }
+        else transaction.replace(R.id.main_content, MainFragment.newInstance("ok"));
+        transaction.commit();
     }
 
     @Override
@@ -75,12 +86,9 @@ public class MainActivity extends BaseActivity
         int id = item.getItemId();
         Intent intent = new Intent();
         if (id == R.id.nav_camera) {
-            FragmentManager fm = getSupportFragmentManager();
-            FragmentTransaction transaction = fm.beginTransaction();
-            transaction.replace(R.id.main_content, MainFragment.newInstance("ok"));
-            transaction.commit();
+            setFragment(0);
         } else if (id == R.id.nav_gallery) {
-
+            setFragment(1);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
