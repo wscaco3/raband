@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary"
-    tools:context="top.ewind.rabbit.ui.LauncherActivity">
+    tools:context="top.ewind.raband.ui.LauncherActivity">
 
     <ImageView
         android:layout_width="wrap_content"

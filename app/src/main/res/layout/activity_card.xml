@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
-    tools:context="com.study.mater.ui.CardActivity">
+    tools:context="top.ewind.raband.ui.CardActivity">
 
     <include layout="@layout/common_toolbar" />
 

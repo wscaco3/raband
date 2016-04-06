@@ -56,4 +56,7 @@
     <string name="error_incorrect_password">账号或密码输入有误</string>
     <string name="error_field_required">账号必须输入</string>
     <string name="title_activity_login2">Sign in</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
