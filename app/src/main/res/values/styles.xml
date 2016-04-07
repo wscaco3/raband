@@ -3,13 +3,10 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primary_dark</item>
-        <item name="colorAccent">@color/accent</item>
     </style>
 
-    <style name="AppThemeFull" parent="Theme.AppCompat.Light.NoActionBar">
-            <item name="android:windowFullscreen">true</item>
+    <style name="AppThemeFull" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="CardView.Content" parent="android:Widget">
@@ -19,5 +16,6 @@
         <item name="android:paddingBottom">24dp</item>
         <item name="android:orientation">vertical</item>
     </style>
+
 
 </resources>
